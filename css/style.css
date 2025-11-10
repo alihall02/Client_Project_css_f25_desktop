@@ -1,0 +1,488 @@
+html body {
+    font-family: "Montserrat", "Nunito Sans", "Merriweather";
+    margin: 0px;
+    padding: 0px;
+}
+p, h2 {
+    line-height: 24px;
+}
+nav {
+    background-color: #00284c;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    max-width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 12px 16px;
+}
+
+nav a.active {
+    background-color: #FFCB05;
+    color: #00284c;
+}
+
+.logo {
+    max-height: 60px;
+    padding-top: 16px;
+}
+.skip a {
+    position: absolute;
+    top: -65px;
+    left: 0;
+    right: 0;
+}
+.skip a:focus {
+    top: 25px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+:focus {
+    border: dashed 5px green;
+}
+
+.umsihome{
+    width: 100%;  /*sourced from w3 schools https://www.w3schools.com/Css/css_rwd_videos.asp*/
+    height: auto;
+    padding-top: 18px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+main.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 30px;
+    padding-bottom: 8px;
+    padding-top: 16px;
+}
+h2 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+section:nth-of-type(even) {
+    box-shadow: 3px 3px 3px 3px #e1e1e1;
+    padding: 16px;
+}
+
+.skip {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+.resource {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    padding-left: 12px;
+}
+.start{
+    grid-column: 2;
+    grid-row: 3;
+    padding-left: 12px;
+}
+.popular {
+    grid-column: 1 / span 2;
+    padding: 16px;
+    grid-row: 5;
+}
+.connect {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+.popular a {
+    padding-bottom: 8px;
+}
+.start-img {
+    grid-row: 3;
+    grid-column: 1 /span 1;
+    height: 170px;
+}
+
+.popular li {
+    padding-top: 8px;
+    padding-left: 8px;
+    margin-bottom: 8px;
+    gap: 4px;
+    list-style-type: none;
+    line-height: 24px;
+}
+
+.start li {
+    padding-left: 8px;
+    margin-bottom: 8px;
+    gap: 4px;
+    list-style-type: none;
+    line-height: 24px;
+}
+.resource li {
+    padding-top: 10px;
+    line-height: 24px;
+}
+
+.start a {
+    text-decoration: none;
+    color: #00437a;
+    font-weight: 600;
+}
+footer {
+    background-color: #00284c;
+    color: white;
+    font-weight: bold;
+    margin-top: 16px;
+    padding: 16px;
+}
+footer a {
+    color: #FFCB05;
+}
+
+main.recontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.resumeimg {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+}
+
+section.resumewriting, section.resumeresource, section.resumefaq, section.resumett {
+    grid-column: 1 / span 2;
+    padding: 8px;
+    line-height: 24px;
+}
+section.resumetips {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    padding: 8px;
+}
+
+.studentimg {
+    max-height: 150px;
+}
+
+main.networkcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+}
+section.networktips {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.studentimg {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+main.portfoliomain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolioimg {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+}
+
+.portfolio {
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+.portfolioneed {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    padding-left: 10px;
+}
+
+.portfolioresource {
+    grid-column: 1;
+    grid-row: 4;
+    padding-left: 10px;
+}
+
+.portfoliotips {
+    grid-column: 2;
+    grid-row: 4;
+    padding-left: 10px;
+}
+.networkstrat li, .networktips li {
+    line-height: 24px;
+}
+.portfolioneed li, .portfolioresource li, .portfoliotips li {
+    line-height: 24px;
+}
+.sidepanel {
+    display: none;
+}
+.open {
+    display: none;
+}
+
+@media (min-width: 1000px){
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 8px;
+}
+nav a {
+    padding-top: 10px;
+}
+nav a:hover {
+    background-color: #00182e;
+
+}
+main.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+.skip {
+    grid-column: 1 / span 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.skip h2 {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+  }
+.skip p {
+    grid-column: 4 / span 3;
+    grid-row: 2;
+    padding-left: 16px;
+}
+
+.skip img {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    width: 100%;
+    height: auto;
+}
+
+.resource {
+    grid-column: 1 / span 6;
+    display: grid;
+    gap: 24px;
+}
+
+.start-img {
+    grid-column: 1 / span 3;
+    width: 85%;
+    height: auto;
+}
+
+.start {
+    grid-column: 4 / span 3;
+}
+
+.connect {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+}
+.popular {
+    grid-column: 4 / span 3 ;
+    grid-row: 4;
+}
+
+.studentimg {
+    grid-column: 1;
+    grid-row: 1;
+}
+.networkopps {
+    grid-column: 2;
+    grid-row: 1;
+    padding-left: 10px;
+}
+section.networktips {
+    grid-column: 2;
+    grid-row: 2;
+}
+main.recontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.resumeimg {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+section.resumetips {
+    grid-column: 4 / span 3;
+    grid-row: 1;
+    padding: 16px;
+}
+
+section.resumewriting {
+    grid-column: 1 / span 6;
+    grid-row: 2;
+    padding: 16px;
+}
+
+section.resumeresource {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+}
+
+section.resumett {
+    grid-column: 4 / span 3;
+    grid-row: 3;
+}
+
+section.resumefaq {
+    grid-column: 1 / span 6;
+    grid-row: 4;
+    padding: 16px;
+}
+
+main.portfoliomain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.portfolioimg {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+}
+
+section.portfolio {
+    grid-column: 4 / span 3;
+    grid-row: 1;
+}
+
+section.portfolioneed {
+    grid-column: 1 / span 6;
+    grid-row: 2;
+}
+
+section.portfolioresource {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+}
+
+section.portfoliotips {
+    grid-column: 4 / span 3;
+    grid-row: 3;
+}
+main.error-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 75vh;
+}
+main.error-main h1 {
+    font-size: 100px;
+    color: #FFCB05;
+    background-color: #00284c;
+    padding: 24px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+main.error-main a {
+    color: #FFCB05;
+    background-color: #00284c;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 28px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+/* Side panel content sourced and modified from W3Schools https://www.w3schools.com/howto/howto_js_sidenav.asp */
+.sidepanel {
+    display: block;
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00284c;
+    overflow-x: hidden;
+    padding-top: 70px;
+    transition: 0.5s;
+}
+
+.sidepanel a {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFCB05;
+    font-weight: bold;
+    display: block;
+}
+
+.sidepanel .close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 40px;
+}
+
+.open {
+    display: block;
+    position: fixed;
+    font-size: 20px;
+    background-color: #00284c;
+    color: #FFCB05;
+    padding: 12px;
+}
+
+.open:hover {
+    background-color: #00182e;
+}
+}
